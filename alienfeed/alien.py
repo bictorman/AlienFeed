@@ -113,7 +113,7 @@ def submission_getter(submission_list, verbose = False):
             u'{count}{arrow}{score} {title} {tags}'.format(**fmt))
 
         for line in wrap:
-            print line
+            print line.encode("utf8")
 
     return submissions
 
